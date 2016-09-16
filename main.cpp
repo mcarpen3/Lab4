@@ -29,8 +29,35 @@ int main()
 		<< "Choice >>";
 
 	cin >> choice;
-	
-	if (choice == 3)
+	if (choice == 1)
+	{
+		cout << " Mission Parameters ";
+		cout << "foodGrown-PerDay:";
+		cin >> foodGrown_PerDay;
+		cout << "cleanup_PerPersonPerDay ";
+		cin >> cleanup_PerPersonPerDay;
+		cout << "foodCount";
+		cin >> foodCount;
+		cout << "Missing Lenght in days";
+		cin >> missionLength;
+		cout << "people on mission";
+		cin >> peopleCount;
+		cout << "team name";
+		cin >> teamName;
+		// Test code
+		cout << "foodGrown_PerDay: " << foodGrown_PerDay << endl;
+		cout << "cleanup_PerPersonPerDay: " << cleanup_PerPersonPerDay << endl;
+		cout << "foodCount: " << foodCount << endl;
+		cout << "missionLength: " << missionLength << endl;
+		cout << "peopleCount: " << peopleCount << endl;
+		cout << "teamName: " << teamName << endl;
+	}
+	else if (choice == 2)
+		cout << " Run Simulation ";
+
+	else
+		
 		done = true;
+
 	return 0;
 }
